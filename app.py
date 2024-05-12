@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 def main():
-    st.title("Question Answering App")
+    st.title("Survey Question Generator")
     
     user_profile = st.text_area("Enter your profile:", height=100)
             # Process the user's question and generate the response        
@@ -14,6 +14,9 @@ def main():
         response = generate_response(user_profile,user_goal)
         
         # Display the response using st.markdown()
+        st.text(f"Your profile is {user_profile}")
+        st.text(f"Your goal is {user_goal}")
+
         st.markdown(response)
 
 def generate_response(user_profile,user_goal):
