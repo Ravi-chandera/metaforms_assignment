@@ -26,7 +26,7 @@ def generate_response(user_profile,user_goal):
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(prompt_parts)
     
-    return response
+    return response.text
 
 if __name__ == "__main__":
     main()
