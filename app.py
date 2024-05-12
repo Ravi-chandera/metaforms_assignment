@@ -4,7 +4,7 @@ import google.generativeai as genai
 def main():
     st.title("Survey Question Generator")
     
-    user_profile = st.text_area("Enter your profile:", height=100)
+    user_profile = st.text_area("Enter your profile (e.g. 'Market analyst')", height=100)
             # Process the user's question and generate the response        
         # Display the response using st.markdown()
     user_goal = st.text_area("Enter your goal:", height=100)
