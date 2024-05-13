@@ -21,7 +21,7 @@ def main():
 
 def generate_response(user_profile,user_goal):
     prompt_parts = [
-  f '''Your task is to generate a set of 5-10 survey questions based on a given goal or intent related to user research, product management, marketing, customer support, or employee engagement and satisfaction. The questions should be clear, concise, and directly relevant to the provided goal.
+  f'''Your task is to generate a set of 5-10 survey questions based on a given goal or intent related to user research, product management, marketing, customer support, or employee engagement and satisfaction. The questions should be clear, concise, and directly relevant to the provided goal.
 
 When generating the questions, try to cover different aspects and angles related to the goal, such as user behaviors, preferences, pain points, demographics, satisfaction levels, and potential improvements or new features.
 
